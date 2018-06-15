@@ -1,0 +1,7 @@
+<h1>Student Detail</h1>
+
+<h3>{{ student.name }}</h3>
+
+<p>학교 이름 : <a href="{% url 'school-detail' student.school.id %}">{{ student.school }}</a></p>
+<p>발행일 : {{ student.created_date }}</p>
+

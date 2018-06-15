@@ -1,0 +1,8 @@
+<h1>School Detail</h1>
+
+<h3>{{ school.name }}</h3>
+<p>{{ school.description }}</p>
+
+{% for student in school.student_set.all %}
+<h4><a href="{% url 'student-detail' student.id %}">{{ student }}</a></h4>
+{% endfor %}
