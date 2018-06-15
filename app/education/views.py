@@ -9,6 +9,7 @@ def index(request):
 
 def school_list(request):
     schools = School.objects.all()
+    # print(schools)
     context = {
         'schools': schools,
     }

@@ -4,5 +4,5 @@
 <p>{{ school.description }}</p>
 
 {% for student in school.student_set.all %}
-    <h4><a href="{% url 'student-detail' student.id %}">{{ student }}</a></h4>
+    <a href="{% url 'student-detail' student.id %}">{{ student }}</a>
 {% endfor %}
